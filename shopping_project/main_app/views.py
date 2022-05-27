@@ -82,7 +82,7 @@ def signup(request):
       
       user = form.save()
       login(request, user)
-      return redirect('stores_index')
+      return redirect('home')
     else:
       error_message = 'Invalid sign up - try again'
 
